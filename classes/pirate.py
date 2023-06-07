@@ -1,16 +1,16 @@
 class Pirate:
-
-    def __init__( self , name ):
+    def __init__(self, name):
         self.name = name
         self.strength = 15
         self.speed = 3
         self.health = 100
-        # super().Ninja._init())
 
-    def show_stats( self ):
-        print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n")
+    def show_stats(self):
+        print(
+            f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n"
+        )
 
-    def swordAttack ( self , ninja ):
+    def swordAttack(self, ninja):
         ninja.health -= self.strength
         return self
 
@@ -21,4 +21,3 @@ class Pirate:
     def drinkWhiskey(self):
         self.health += 10
         return self
-

@@ -22,7 +22,7 @@ while sensei.health > 0 and jack_sparrow.health > 0:
         jack_sparrow.show_stats()
     else:
         print("Choose a valid option! (1 or 2)")
-    coin_toss = random.randint(1,2)
+    coin_toss = random.randint(1, 2)
     if coin_toss == 1:
         jack_sparrow.tossBottle(sensei)
     else:
@@ -33,7 +33,6 @@ print("Game Over")
 print("\n==================\n")
 
 
-
 print("\n==================\n")
 
 print("ROUND ONE")
@@ -41,7 +40,6 @@ print("ROUND ONE")
 # USE THE SPEED TO DECIDE WHO GOES FIRST
 # michelangelo.attack(jack_sparrow)
 jack_sparrow.drinkWhiskey()
-
 
 
 rounds += 1
