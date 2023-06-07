@@ -7,7 +7,7 @@ class Pirate:
 
     def show_stats(self):
         print(
-            f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n"
+    f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n"
         )
 
     def swordAttack(self, ninja):
