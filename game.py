@@ -9,15 +9,15 @@ jack_sparrow = Pirate("Jack Sparrow")
 
 rounds = 0
 
-while sensei.hp > 0 and jack_sparrow.hp > 0:
+while sensei.health > 0 and jack_sparrow.health > 0:
     player_input = ""
     while not player_input == "1" and not player_input == "2":
     # Using the input method, we can request something from the user in the terminal.
-    player_input = input("What to do?\n 1) Attack\n 2) Use skill\n <=========>")
+        player_input = input("What to do?\n 1) Attack\n 2) Use skill\n <=========> ")
     if player_input == "1":
         sensei.punchAttack(jack_sparrow)
     elif player_input == "2":
-        jack_sparrow.Warrior_Rage(wizard)
+        jack_sparrow.drinkWhiskey(Pirate)
 
 
 
@@ -40,7 +40,7 @@ print("\n==================\n")
 
 print("ROUND ONE")
 
-# USE THE SPEED TO DECIDE WHO GOES FIRST 
+# USE THE SPEED TO DECIDE WHO GOES FIRST
 #michelangelo.attack(jack_sparrow)
 jack_sparrow.drinkWhiskey("Crown Royal")
 
