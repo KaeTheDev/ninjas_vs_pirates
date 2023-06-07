@@ -5,6 +5,7 @@ class Pirate:
         self.strength = 15
         self.speed = 3
         self.health = 100
+        # super().Ninja._init())
 
     def show_stats( self ):
         print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n")
@@ -16,7 +17,8 @@ class Pirate:
     def tossBottle(self, ninja):
         ninja.health -= self.strength
         return self
-    
-    def drinkWhiskey(self, health):
+
+    def drinkWhiskey(self):
         self.health += 10
         return self
+

@@ -1,3 +1,7 @@
+from classes.ninja import Ninja
+from classes.pirate import Pirate
+
+
 print(f'The warrior: {warrior.name} approaches the wizard: {wizard.name}!')
 
 while warrior.hp > 0 and wizard.hp > 0:
@@ -11,12 +15,12 @@ while warrior.hp > 0 and wizard.hp > 0:
             warrior.Warrior_Rage(wizard)
         else:
             print("Choose a valid option! (1 or 2)")
-        
+
     coin_toss = random.randint(1,2)
     if coin_toss == 1:
-        wizard.attack(warrior)
+        Pirate.attack(Ninja)
     else:
-        wizard.magearmor()
+        Ninja.meditate()
 
     rounds++
     if warrior.hp > 0:
